@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 1px rgba(0, 0, 0, .1), 5px 5px 15px rgba(0, 0, 0, .1);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 330px;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 145px;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="button"]:hover {
+    background-color: rgba(30, 143, 255, 0.336);
+}
+
+input[value="AC"],
+input[value="DE"],
+input[value="."],
+input[value="/"],
+input[value="+"],
+input[value="="],
+input[value="*"],
+input[value="-"] {
+    color: orange !important;
+}
+
+
+input[value="AC"]:hover,
+input[value="DE"]:hover,
+input[value="."]:hover,
+input[value="/"]:hover,
+input[value="+"]:hover,
+input[value="="]:hover,
+input[value="*"]:hover,
+input[value="-"]:hover {
+    background-color: rgba(255, 255, 255, 0.336);
+}
